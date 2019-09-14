@@ -1,12 +1,19 @@
+/**
+ * implements rendering of data
+ */
 class OutputController {
     constructor (container) {
-        this._container = container;
-        this._dataSource = null;
+        this._container = null;
+        this._service = null;
     }
 
-    bind (dataSource) {
-        this._dataSource = dataSource;
-        dataSource.on('data', this.render.bind(this));
+    init (container) {
+        this._container = container;
+    }
+
+    bind (service) {
+        this._service = service;
+        service.on('data', this.render.bind(this));
     }
 
     render (items) {

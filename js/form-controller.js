@@ -2,30 +2,29 @@
  * controls form
  */
 class FormController extends EventEmitter {
-    /**
-     * @param {HTMLElement} form
-     */
-    constructor (form) {
+    constructor () {
         super(['submit']);
         this.isValid = true;
-
-        this.init(form);
+        this._form = null;
+        this._inputs = {
+            day: null,
+            month: null,
+            year: null
+        }
     }
 
     /**
      * initialize controller
      * subscribes events
-     * @param form
+     * @param {HTMLElement} form
      */
     init (form) {
         this._form = form;
         this._form.addEventListener('submit', (e) => {
             e.preventDefault();
-            try {
-                this.submit();
-            } catch (e) {
-                throw new Error(e.message);
-            }
+
+            this.submit();
+
             return false;
 
         });
@@ -35,14 +34,21 @@ class FormController extends EventEmitter {
      * validates form data
      */
     validate () {
+        // day
+        this._inputs.day = this._form.day.value;
+        // month
+        this._inputs.month = this._form.month.value;
+        // year
+        this._inputs.year = this._form.year.value;
 
+        return true;
     }
 
 
     submit () {
         this.validate();
         if (this.isValid) {
-            this.fire('submit', this.inputs());
+            this.fire('submit', [this.inputs()]);
         }
         return this.isValid;
     }
@@ -53,15 +59,8 @@ class FormController extends EventEmitter {
      * @param evt
      */
     inputs () {
-        let ok = false;
-        let inputs = {
 
-        };
-        if (ok) {
-            return inputs;
-        } else {
-            return false;
-        }
+        return this._inputs;
     }
 
     /**

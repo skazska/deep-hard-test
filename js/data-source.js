@@ -43,7 +43,7 @@ class DataSource {
      */
     async next(count) {
         if (!count) count = this._count;
-        const result = await this.query(this._arguments, this._from, count);
+        const result = await this.query(this._arguments, count, this._from);
         this._from += count;
         return result;
     }

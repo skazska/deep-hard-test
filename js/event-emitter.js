@@ -15,7 +15,7 @@ class EventEmitter {
      */
     initEvents (events) {
         this._events = {};
-        for (let event in events) {
+        for (let event of events) {
             this._events[event] = new Set();
         }
     }
@@ -52,7 +52,7 @@ class EventEmitter {
      */
     fire (event, args) {
         if (this._events[event]) {
-            for (let handler in this._events[event]) {
+            for (let handler of this._events[event]) {
                 handler.apply(this, args || []);
             }
         }

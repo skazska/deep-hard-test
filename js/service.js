@@ -54,14 +54,8 @@ class UsersDataSource extends DataSource {
  * Service provides data
  */
 class Service extends EventEmitter {
-    /**
-     * @param {number} apiId vk app id
-     */
-    constructor (apiId) {
-        super(['start', 'data', 'end']);
-        VK.init({
-            apiId: apiId
-        });
+    constructor () {
+        super(['ready', 'start', 'data', 'end']);
         this._dataSource = null;
         this._pending = null;
     }
@@ -89,7 +83,7 @@ class Service extends EventEmitter {
 
         const get = async () => {
             const result = await this._dataSource.next();
-            this.fire('data', result);
+            this.fire('data', [result]);
             if (this._loaded < count && this._dataSource.hasMore()) {
                 this._pending = get();
             } else {
@@ -98,6 +92,7 @@ class Service extends EventEmitter {
         };
 
         this._pending = get();
+        return this;
     }
 
 }
