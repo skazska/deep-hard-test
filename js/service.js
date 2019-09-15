@@ -36,6 +36,7 @@ class Service extends EventEmitter {
         this._loaded = 0;
         this._dataSource = this.dataSource(args);
 
+        // sequentally query data
         const get = async () => {
             const result = await new Promise((resolve, reject) => {
                 this._dataSource.next(pack, (e, items) => {
@@ -47,7 +48,9 @@ class Service extends EventEmitter {
 
             this.fire('data', [result]);
             if (this._loaded < count && this._dataSource.hasMore()) {
-                this._pending = get();
+                setTimeout(() => {
+                    this._pending = get();
+                }, 334);
             } else {
                 this.fire('end');
             }
