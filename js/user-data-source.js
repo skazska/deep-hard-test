@@ -29,63 +29,63 @@ var UserDataSource = extendKlass(
                 callback(null, r.response.items);
             };
 
-            return setTimeout(function() {
-                processResponse({
-                    response: {
-                        count: 96,
-                        items: [
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
-                            {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
-                            {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
-                            {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"}
-                        ]
-                    }
-                });
-            }, 300);
+            // return setTimeout(function() {
+            //     processResponse({
+            //         response: {
+            //             count: 96,
+            //             items: [
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"},
+            //                 {id: 138809483, first_name: "Сергей", last_name: "Клюкин", photo: "https://pp.vk.me/AkqsO4hmy0rfmrnx5UuCFVobz4RjfyNBpVJYrw/l2Ch8Yb-7ic.jpg"},
+            //                 {id: 3769628, first_name: "Евгений", last_name: "Ерофеев", photo: "https://pp.vk.me/c633631/v633631936/2aaf3/Li17Zr1vR6I.jpg"},
+            //                 {id: 110908486, first_name: "Аня", last_name: "Лебедева", photo: "https://pp.vk.me/c636529/v636529430/5b5c/OzC5gUYfGxE.jpg"}
+            //             ]
+            //         }
+            //     });
+            // }, 300);
 
             try {
                 VK.Api.call('users.search', {
