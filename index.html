@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
+    <link rel="stylesheet" href="index.css">
     <script src="js/extend.js" language="JavaScript"></script>
     <script src="js/event-emitter.js" language="JavaScript"></script>
     <script src="js/data-source.js" language="JavaScript"></script>
@@ -29,15 +30,13 @@
     <div class="page">
         <div class="inputs-container">
             <form name="vkSearchForm" onsubmit="return false">
-                <div class="input-container">
-                    <input name="day" type="number" placeholder="Day" onchange="formController.validateOnInput()">
-                    <input name="month" type="number" placeholder="Month" onchange="formController.validateOnInput()">
-                    <input name="year" type="number" placeholder="Year" onchange="formController.validateOnInput()">
-                    <input type="submit" value="Find">
-                </div>
+                <input name="day" type="number" placeholder="Day" onchange="formController.validateOnInput()">
+                <input name="month" type="number" placeholder="Month" onchange="formController.validateOnInput()">
+                <input name="year" type="number" placeholder="Year" onchange="formController.validateOnInput()">
+                <input type="submit" value="Find">
             </form>
         </div>
-        <div id="output-container" class="outputs-container">
+        <div id="outputs-container" class="outputs-container">
             <div class="load-indicator"></div>
             <div class="items-container"></div>
         </div>
