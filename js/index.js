@@ -6,8 +6,9 @@ const outputController = new OutputController();
 function start() {
     formController.init(document.vkSearchForm);
     outputController.init(document.getElementById('output-container'));
+    outputController.bind(service);
     formController.on('submit', (inputs) => {
-        outputController.bind(service.load(inputs));
+        service.load(inputs, 1000, 3);
     });
 }
 
