@@ -23,7 +23,7 @@ const vkReady = new Promise(resolve => {
     //lazy vk init as described at https://vk.com/dev/openapi?f=2.1.%20%D0%9E%D0%B1%D1%8B%D1%87%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F
     window.vkAsyncInit = function() {
         VK.init({
-            apiId: 7135534 //7134361
+            apiId: 7135534
         });
         resolve(VK);
     };
