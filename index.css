@@ -2,14 +2,12 @@
     position: absolute;
     top: 0.2em;
     bottom: 0.2em;
-    left: auto;
-    max-width: 50em;
-    min-width: 20em;
+    left: 0.2em;
+    right: 0.2em;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    overflow: hidden;
-}
+    overflow: hidden;}
 
 .inputs-container {
     height: 2em;
@@ -67,4 +65,15 @@
 
 h4 {
     margin: 0.16em 0;
+}
+
+.input {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background: inherit;
+}
+
+input.input {
+    width: 4em;
 }
